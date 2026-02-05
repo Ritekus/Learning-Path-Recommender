@@ -142,6 +142,19 @@ Visual roadmap (progress bar or skill tree)
 
 Peer comparison (anonymous): “Students like you learned this next”
 
+Mermaid Diagram
+flowchart TD
+    A[Student Profile Input] --> B[Profile Analyzer]
+    B --> C[Diagnostic Test Engine]
+    C --> D[Course Compression Engine]
+    D --> E[Knowledge Gap Analyzer]
+    E --> F[Learning Path Generator]
+    F --> G[Adaptive Feedback Loop]
+    G --> H[Personalized Learning Path Output]
+
+    F --> I[Knowledge Graph]
+    G --> B
+
 8. Sample One-Line Pitch
 
 “An AI agent that intelligently compresses course catalogs and student progress data to generate adaptive, goal-driven, and time-efficient personalized learning paths.”
