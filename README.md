@@ -22,7 +22,7 @@ Innovative Ideas:
 1) AI task: Summarization & clustering
 It would compress similar courses/topics together.
 
-B. Student Profile
+2. Student Profile
 
 Current knowledge level
 
