@@ -1,29 +1,26 @@
 # Learning-Path-Recommender
 1. Core Idea (Agent’s Job)
-The AI agent should:
-i) take input the learners pervious academic achievements and previous knowledge in the favoured course.
-ii)Take a short test on the topics of the course to test learner's knowledge.
-Compress large course catalogs (many courses, modules, lessons)
 
-Understand student progress & goals
+What it will do->
+It will be a support to the student in order to make sure that he/she in on track with the course.
+First of all the agent should take input the learners pervious academic achievements and knowledge in the favored course.
+A basic test would be taken in order to assess the knowledge of the learner in the aspired course. 
+Depending on the score of the test the agent would recommend a learning plan.
+The score could depict three situations:
+i)If the score is above 80% then student had grasped the pre-requisites regarding the course. The agent would generate plan stating the estimated time to complete the course along with estimated completion time on particular topic as well as estimated time to revise the topic and number of tests required for in depth understanding of the topic.
 
-Generate a personalized learning path (what to learn next, skip, revise)
+ii)If the score is below 80% and above 60% then student requires revisit those concepts and give the test again or would be provided a different plan with a longer duration so to brush up the basics of the topic first then start with the course itself.
 
-Think of it as a smart academic GPS 🧭
+iii)If the score is below 60% then student would be provided a plan to relearn the basic concepts and after attempting the test and scoring good the student would be provided with the plan regarding the further plan of the course.
 
-2. Inputs Your Agent Should Use
-A. Course Catalog Data
+
+The agent would understand student progress & goals and based on it would generate a personalized learning path (what to learn next, skip, revise).
 
 Course → Units → Topics → Skills
 
-Difficulty level (beginner / intermediate / advanced)
-
-Prerequisites
-
-Estimated time per topic
-
-👉 AI task: Summarization & clustering
-(Compress similar courses/topics together)
+Innovative Ideas:
+1) AI task: Summarization & clustering
+It would compress similar courses/topics together.
 
 B. Student Profile
 
@@ -39,41 +36,28 @@ Available time per day/week
 
 👉 AI task: User modeling
 
-3. Key Agent Features (Ideas You Can Implement)
-1️⃣ Course Compression Engine
+3. Key Features 
+(A) Course compression engine
 
-Idea:
-Use NLP to convert long course descriptions into:
+Idea- Use NLP to convert long course descriptions into:
 
-Core concepts
+i)Core concepts
+ii)Required prerequisites
+iii)Outcomes
 
-Required prerequisites
+Example: Instead of suggesting 10 python courses it would work like “You need loops, functions, lists → then OOP → then projects”
 
-Outcomes
+(B) Knowledge Gap Detector
 
-Example:
-Instead of 10 Python courses →
-➡️ “You need loops, functions, lists → then OOP → then projects”
+Compare :
+What the student knows and what he/she requires and to what level does he/she would have to learn it to work on his/her terms.
+As the above test would reflect on the topics which the student already knows, only the topics which are unknown to student will be highlighted.
 
-2️⃣ Knowledge Gap Detector
+Example: "One already knows about Object Oriented Programming" then the agent would advise it to skip the theory and work on a project given by the agent.
 
-Idea:
-Compare:
+(C)Dynamic Learning Path Generator
 
-What the student knows
-
-What the goal requires
-
-AI highlights missing skills only, avoiding repetition.
-
-📌 Example:
-
-“You already know variables and loops → skip Module 1”
-
-3️⃣ Dynamic Learning Path Generator
-
-Idea:
-The agent creates a step-by-step path, not just recommendations.
+Idea: The agent creates a step by step path.
 
 📍 Example Output:
 
@@ -85,21 +69,18 @@ Practice word problems (1 day)
 
 Weekly mini-test
 
-4️⃣ Adaptive Path Updating
+(D) Adaptive Path Updating
+Idea: If one of the below mentioned case arises:
 
-Idea:
-After quizzes or feedback:
-
-If student struggles → slow down & revise
+If student feels unconfident about the topic then slow down & revise
 
 If student performs well → fast-track content
 
 This makes the agent adaptive, not static.
 
-5️⃣ Time-Aware Scheduling
+(E)Time Scheduling
 
-Idea:
-The agent designs learning paths based on time constraints.
+Idea: The agent designs learning paths based on time constraints.
 
 🕒 Example:
 
@@ -107,7 +88,7 @@ The agent designs learning paths based on time constraints.
 
 “You have 2 hours/day → deep learning blocks”
 
-4. AI Techniques You Can Mention / Use
+More Features:
 🔹 NLP
 
 Text summarization of course descriptions
