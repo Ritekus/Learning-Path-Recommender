@@ -155,6 +155,4 @@ flowchart TD
     F --> I[Knowledge Graph]
     G --> B
 
-8. Sample One-Line Pitch
-
-“An AI agent that intelligently compresses course catalogs and student progress data to generate adaptive, goal-driven, and time-efficient personalized learning paths.”
+One-Line Pitch: “An AI agent that intelligently compresses course catalogs and student progress data to generate adaptive, goal-driven, and time-efficient personalized learning paths.”
